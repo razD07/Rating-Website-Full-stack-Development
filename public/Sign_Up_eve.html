@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<title>SIGNUP</title>
+
+<head>
+	<script>  
+		function validateform(){  
+			var name=document.myform.nam.value;  
+			var firstpassword=document.myform.pass.value;  
+			var secondpassword=document.myform.passt.value; 
+			var emailID = document.myform.email.value;
+	         atpos = emailID.indexOf("@");
+	         dotpos = emailID.lastIndexOf(".");
+			  
+			if (name==null || name==""){  
+			  alert("Name can't be blank");  
+			  return false;  
+
+			}
+			else if(firstpassword.length<6){  
+			  alert("Password must be at least 6 characters long.");  
+			  return false;  
+			}  
+			else if(firstpassword!==secondpassword){  
+				alert("password must be same!");
+				return false; 
+			}   
+
+			else if (atpos < 1 || ( dotpos - atpos < 2 )) {
+	            alert("Please enter correct email ID");
+	            return false;    
+	        }
+	         else{
+	         return true ;	  
+			}	  
+		}  
+
+	</script>
+	<style>
+		.q{
+			text-align:center;
+			padding:0px;
+			
+		}
+		.q1{
+			border-style:solid;
+			border-width:0px 0px 0px 0px;
+			width:555px;
+			padding-bottom:2px;
+			margin-left:1000px;
+			background-color:#FFF;
+			margin-top:70px;
+			border-color:#999;
+			border-radius:10px;
+			opacity:0.9;
+			
+		}
+		input[type=submit]{
+			color:rgb(236, 236, 245);
+			background-color:#933;
+			
+		}
+		input[type=submit]:hover{
+			background-color:#039;
+			color:#FFF;		
+		}
+		.q2{
+			font-family:Gabriola;
+			margin-top:10px;
+			font-size:90px;
+			margin-left:950px;
+		}
+		input[type=text],input[type=password]
+		{
+			width:400px;
+			height:33px;
+			border-radius:10px;
+			border-style:solid;
+			border-width:1px;
+			border-color:#CCC;
+			
+		}
+		a{
+			text-decoration:none;
+			color:#CCC;
+		}
+		input[type=submit]
+		{
+			width:400px;
+			height:40px;
+			border-radius:10px;
+			border-style:none;
+		}
+		img{
+			border-radius:10px;
+		}
+		.q3{
+			text-align:center;
+		
+			border-style:solid;
+			border-width:0px 0px 0px 0px;
+			padding-top:2px;
+			padding-bottom:10px;
+			border-color:#999;
+			width:450px;
+			margin-left:527px;
+			
+		}
+		body{
+			background-image:url(./images/all.jpg);
+			background-size: 1950px 1000px;
+			background-repeat:no-repeat;
+		}
+		
+			
+	</style>
+</head>
+<body>
+	<div class="q2">
+		<font color="#993300">&nbsp;&nbsp;&nbsp; FILMY2021</font>
+        
+	</div>
+<div class="q1">
+    <br>
+            <br>
+    
+	  <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;   	 &nbsp;	<font color="black" face="Palatino Linotype, Book Antiqua, Palatino, serif"> Register Your Account</font></h2>
+      <form action="/reg"  name="myform" method="POST" onsubmit="return validateform()" >
+        <div class="q">
+			
+			<input type="text" name="nam" value="" placeholder="Name"><br><br>
+	
+			<input type="text" name="email" value="" placeholder="EmailID"><br><br>
+		
+			<input type="text" name="usr" value="" placeholder="Username" required><br><br>
+			
+			<input type="password" name="pass" value="" placeholder="Password"><br><br>
+			
+			<input type="password" name="passt" value="" placeholder="Confirm password"><br><br>
+			
+			<input type="submit" name="submit" value="Sign Up">
+			<br><br>
+            Already a member??<a href="/">SIGN IN</a>
+	</div>
+    <br>
+</form>
+</div>
+
+</body>
+
+</html>
