@@ -60,12 +60,28 @@ function N1 ( )
     else
 
     {
-      
+		alert("Thank You")
        return true;
 
     }
 }
 
+window.onload =  function load(){
+	var g = document.getElementById("nam");
+	var h = document.getElementById("rar1");
+	var k = document.getElementById("rar2");
+	var l = document.getElementById("rar3");
+	var m = document.getElementById("rar4");
+	var n = document.getElementById("rar5");
+	var o = document.getElementById("rar6");
+	g.innerHTML='$$name$$';
+	h.innerHTML='$$name1$$';
+	k.innerHTML='$$name2$$';
+	l.innerHTML='$$name3$$';
+	m.innerHTML='$$name4$$';
+	n.innerHTML='$$name5$$';
+	o.innerHTML='$$name6$$';
+}
 
 </script>
 	<style>
@@ -227,7 +243,7 @@ function N1 ( )
 
 	</style>
 </head>
-<body style="background-color:black;">
+<body style="background-color:black;" >
 
 <div class="mn">
 <br>
@@ -287,8 +303,13 @@ function N1 ( )
       		<a href="#">f</a>
             
     	</div>
-    </div>
-    <strong><a href="/">LOGOUT</a></strong>		
+		
+			<strong><font color="white">HI <label id="nam">xxx</label></font></strong>
+		
+	</div>
+	
+    <strong><a href="/">LOGOUT</a></strong>	
+	
 </div>
 
 <div class="x">
@@ -319,11 +340,16 @@ function N1 ( )
    <br>
    <font color="white" size="+1" ><strong>VENOM</strong></font><font color="#fffff"><br>Andy Serkis<br></font>
     <div class="rate">
-    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input type="text" id="first1" name="r1" placeholder="&nbsp;1-5"><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<font color="#fffff">AVG:<label id="rar1">rr1</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Rating:</font>
+    
+	
+		
+	
+	<input type="text" id="first1" name="r1" placeholder="&nbsp;1-5"><br>
   </div>
 	
 </div>
@@ -337,11 +363,13 @@ function N1 ( )
     <font color="#fffff">Simon McQuoid</font>
 <br>
     <div class="rate">
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input type="text" id="first2" name="r2" placeholder="&nbsp;1-5"><br>
-   
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 <font color="#fffff">AVG:<label id="rar2">rr2</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Rating:</font><input type="text" id="first2" name="r2" placeholder="&nbsp;1-5"><br>
+	
+
   </div>
   
 </div>
@@ -351,10 +379,10 @@ function N1 ( )
     <br>
     <font color="white" size="+1"><strong>BLACK WIDOW</strong></font><br><font color="#fffff">Cate Shortland</font><br>
       <div class="rate">
-       <br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       <input type="text" id="first3" name="r3" placeholder="&nbsp;1-5"><br>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <font color="#fffff">AVG:<label id="rar3">rr3</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Rating:</font><input type="text" id="first3" name="r3" placeholder="&nbsp;1-5"><br>
   </div>
     &nbsp;
     &nbsp;
@@ -373,10 +401,10 @@ function N1 ( )
    <br>
    <font color="white" size="+1"><strong>RAYA</strong></font><br><font color="#fffff">Don Hall</font><br>
     <div class="rate">
-    <br>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <br>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input type="text" id="first4" name="r4" placeholder="&nbsp;1-5"><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <font color="#fffff">AVG:<label id="rar4">rr4</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Rating:</font><input type="text" id="first4" name="r4" placeholder="&nbsp;1-5"><br>
   </div>
   
 	
@@ -388,10 +416,10 @@ function N1 ( )
    <br>
    <font color="white" size="+1"><strong>AQUAMAN</strong></font><br><font color="#fffff">James Wan</font><br>
     <div class="rate">
-     <br>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <br>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     <input type="text" id="first5" name="r5" placeholder="&nbsp;1-5"><br>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <font color="#fffff">AVG:<label id="rar5">rr5</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Rating:</font><input type="text" id="first5" name="r5" placeholder="&nbsp;1-5"><br>
   </div>
   
   
@@ -402,10 +430,10 @@ function N1 ( )
    <br>
    <font color="white" size="+1"><strong>THE NUN</strong></font><br><font color="#fffff">Corin Hardy</font><br>
     <div class="rate">
-      <br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <input type="text" id="first6" name="r6" placeholder="&nbsp;1-5"><br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <font color="#fffff">AVG:<label id="rar6">rr6</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Rating:</font><input type="text" id="first6" name="r6" placeholder="&nbsp;1-5"><br>
   </div>
   <br><br><br><br>
   <br><br><br><br>
