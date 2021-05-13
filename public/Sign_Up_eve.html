@@ -1,150 +1,462 @@
 <!DOCTYPE html>
-<title>SIGNUP</title>
+<title></title>
 
 <head>
-	<script>  
-		function validateform(){  
-			var name=document.myform.nam.value;  
-			var firstpassword=document.myform.pass.value;  
-			var secondpassword=document.myform.passt.value; 
-			var emailID = document.myform.email.value;
-	         atpos = emailID.indexOf("@");
-	         dotpos = emailID.lastIndexOf(".");
-			  
-			if (name==null || name==""){  
-			  alert("Name can't be blank");  
-			  return false;  
+  <script>
 
-			}
-			else if(firstpassword.length<6){  
-			  alert("Password must be at least 6 characters long.");  
-			  return false;  
-			}  
-			else if(firstpassword!==secondpassword){  
-				alert("password must be same!");
-				return false; 
-			}   
+function N1 ( )
+{
+    var firstName = document.getElementById("first1");
+    var firstName2 = document.getElementById("first2");
+    var firstName3 = document.getElementById("first3");
+    var firstName4 = document.getElementById("first4");
+    var firstName5 = document.getElementById("first5");
+    var firstName6 = document.getElementById("first6");
 
-			else if (atpos < 1 || ( dotpos - atpos < 2 )) {
-	            alert("Please enter correct email ID");
-	            return false;    
-	        }
-	         else{
-	         return true ;	  
-			}	  
-		}  
 
-	</script>
+    if (firstName.value !== "1" && firstName.value !== "2" && firstName.value !== "3" && firstName.value !== "4" && firstName.value !== "5")
+
+    {
+      
+       alert("Rating should be 1 to 5");   
+       return false;
+
+    }
+    else if (firstName2.value !== "1" && firstName2.value !== "2" && firstName2.value !== "3" && firstName2.value !== "4" && firstName2.value !== "5")
+    {
+
+      alert("Rating should be 1 to 5");
+      return false;
+
+    }
+    else if (firstName3.value !== "1" && firstName3.value !== "2" && firstName3.value !== "3" && firstName3.value !== "4" && firstName3.value !== "5")
+    {
+
+      alert("Rating should be 1 to 5");
+      return false;
+
+    }
+    else if (firstName4.value !== "1" && firstName4.value !== "2" && firstName4.value !== "3" && firstName4.value !== "4" && firstName4.value !== "5")
+    {
+
+      alert("Rating should be 1 to 5");
+      return false;
+
+    }
+    else if (firstName5.value !== "1" && firstName5.value !== "2" && firstName5.value !== "3" && firstName5.value !== "4" && firstName5.value !== "5")
+    {
+
+      alert("Rating should be 1 to 5");
+      return false;
+
+    }else if (firstName6.value !== "1" && firstName6.value !== "2" && firstName6.value !== "3" && firstName6.value !== "4" && firstName6.value !== "5")
+    {
+
+      alert("Rating should be 1 to 5");
+      return false;
+
+    }
+
+    else
+
+    {
+		alert("Thank You")
+       return true;
+
+    }
+}
+
+window.onload =  function load(){
+	var g = document.getElementById("nam");
+	var h = document.getElementById("rar1");
+	var k = document.getElementById("rar2");
+	var l = document.getElementById("rar3");
+	var m = document.getElementById("rar4");
+	var n = document.getElementById("rar5");
+	var o = document.getElementById("rar6");
+	g.innerHTML='$$name$$';
+	h.innerHTML='$$name1$$';
+	k.innerHTML='$$name2$$';
+	l.innerHTML='$$name3$$';
+	m.innerHTML='$$name4$$';
+	n.innerHTML='$$name5$$';
+	o.innerHTML='$$name6$$';
+}
+
+</script>
 	<style>
-		.q{
-			text-align:center;
-			padding:0px;
-			
+
+
+		.m1{
+			position:relative;
+			top:0px;
+			margin-left:50px;
+			op:0px;
 		}
-		.q1{
-			border-style:solid;
-			border-width:0px 0px 0px 0px;
-			width:555px;
-			padding-bottom:2px;
-			margin-left:1000px;
-			background-color:#FFF;
-			margin-top:70px;
-			border-color:#999;
-			border-radius:10px;
-			opacity:0.9;
-			
+		.m{
+			position:sticky;
+			top:0;
+			z-index:0;S
+				
 		}
-		input[type=submit]{
-			color:rgb(236, 236, 245);
-			background-color:#933;
-			
-		}
-		input[type=submit]:hover{
-			background-color:#039;
-			color:#FFF;		
-		}
-		.q2{
-			font-family:Gabriola;
-			margin-top:10px;
-			font-size:90px;
-			margin-left:950px;
-		}
-		input[type=text],input[type=password]
-		{
-			width:400px;
-			height:33px;
-			border-radius:10px;
-			border-style:solid;
-			border-width:1px;
-			border-color:#CCC;
-			
+		.m2{
+	position: absolute;
+	top: 603px;
+	right: 751px;
 		}
 		a{
 			text-decoration:none;
-			color:#CCC;
+			color:#FFF;
 		}
-		input[type=submit]
-		{
-			width:400px;
-			height:40px;
-			border-radius:10px;
-			border-style:none;
-		}
-		img{
-			border-radius:10px;
-		}
-		.q3{
+		.n{
+			width:33.33%;
+			float:left;
 			text-align:center;
+      background-color: #000;
+		}
+		.m3{
+			color:#06C;
+			font-family:"Charlemagne Std", Palatino, serif;	
+      background-color: #000;
+		}
 		
+		a img:hover{
+			border-color:#000;
 			border-style:solid;
-			border-width:0px 0px 0px 0px;
-			padding-top:2px;
-			padding-bottom:10px;
-			border-color:#999;
-			width:450px;
-			margin-left:527px;
+			border-width:medium;
+		}
+		.m5{
+			width:33.33%;
+			float:left;
+			text-align:center;
+       background-color: #000;
+      
+
+		}
+		.m7{
+			float:right;
+			position:relative;
+			top:-220px;
+			right:100px;
+		 background-color: #000;	
+		}
+	
+		.m9{
+			width:33.33%;
+      background-color: #000; 
+		}
+		.mm{
+			color:#FFF;
+		}
+		.mn{
+			background-color:#000;
+			color:#3FF;
+			font-family:Gabriola;
+		}
+		.navbar {
+  			overflow: hidden;
+  			background-color: #333;
+ 			font-family: Didot ;
 			
 		}
-		body{
-			background-image:url(./images/all.jpg);
-			background-size: 1950px 1000px;
-			background-repeat:no-repeat;
+		.navbar a {
+  			float: left;
+  			font-size: 16px;
+  			color: white;
+  			text-align: center;
+  			padding: 14px 16px;
+  			text-decoration: none;
 		}
-		
-			
+		.dropdown {
+  			float: left;
+  			overflow: hidden;
+		}
+		.dropdown .dropbtn {
+  			font-size: 16px;
+  			border: none;
+  			outline: none;
+  			color: white;
+  			padding: 14px 16px;
+  			background-color:#900;
+  			font-family: Didot ;
+  			margin: 0; 
+		}
+		.navbar a:hover, .dropdown:hover .dropbtn {
+			background-color: red;
+		}
+		.dropdown-content {
+  			display: none;
+  			position: absolute;
+  			background-color: #f9f9f9;
+  			min-width: 160px;
+  			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  			z-index: 1;
+		}
+		.dropdown-content a {
+  			float: none;
+  			color: black;
+  			padding: 12px 16px;
+  			text-decoration: none;
+  			display: block;
+  			text-align: left;
+		}
+		.dropdown-content a:hover {
+  			background-color: #ddd;
+		}
+		.dropdown:hover .dropdown-content {
+  			display: block;
+		}
+		.x{
+			background-color:#000;
+		}
+    .rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+    background-color: #000; 
+  }
+   
+  input[type=submit]
+    {
+      width:120px;
+      height:40px;
+      border-radius:10px;
+      border-style:none;
+      color:#FFF;
+      background-color:#933;
+      font-size:16px;
+      margin-left: -1250px;
+    }
+    input[type=text]
+    {
+      width:40px;
+      height:20px;
+      border-radius:10px;
+      border-style:none;
+      font-size:16px;
+      
+    }
+    input[type=submit]:hover{
+      background-color:#039;
+      color:#FFF;   
+    }
+
 	</style>
 </head>
-<body>
-	<div class="q2">
-		<font color="#993300">&nbsp;&nbsp;&nbsp; FILMY2021</font>
-        
-	</div>
-<div class="q1">
-    <br>
-            <br>
-    
-	  <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;   	 &nbsp;	<font color="black" face="Palatino Linotype, Book Antiqua, Palatino, serif"> Register Your Account</font></h2>
-      <form action="/reg"  name="myform" method="POST" onsubmit="return validateform()" >
-        <div class="q">
-			
-			<input type="text" name="nam" value="" placeholder="Name"><br><br>
-	
-			<input type="text" name="email" value="" placeholder="EmailID"><br><br>
-		
-			<input type="text" name="usr" value="" placeholder="Username" required><br><br>
-			
-			<input type="password" name="pass" value="" placeholder="Password"><br><br>
-			
-			<input type="password" name="passt" value="" placeholder="Confirm password"><br><br>
-			
-			<input type="submit" name="submit" value="Sign Up">
-			<br><br>
-            Already a member??<a href="/">SIGN IN</a>
-	</div>
-    <br>
-</form>
+<body style="background-color:black;" >
+
+<div class="mn">
+<br>
+
+<a href="sel_mov.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="15" face="Sans-Serif" color="#0F52BA">flickTier</font></a>
+&nbsp; &nbsp;&nbsp;&nbsp; All kind for everyone  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Venom.jpg" width="150" height="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Mor.jpg" width="150" height="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Bw.jpg" width="150" height="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/aq.jpg" width="150" height="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/ray.jpg" width="150" height="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/nun.jpg" width="150" height="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/jok.jpg" width="150" height="200">
 </div>
 
-</body>
 
+<div class="navbar">
+	<strong><a href="Book_store.html">HOME</a></strong>
+    <div class="dropdown">
+    	<button class="dropbtn"><strong>DIRECTORS</strong>
+      		<i class="fa fa-caret-down"></i>
+    	</button>
+    	<div class="dropdown-content">
+      		<a href="#">AGATHA CHRISTIE</a>
+     		<a href="#">DAN BROWN</a>
+      		<a href="#">BENYAMIN</a>
+            <a href="#">SONIA BAHL</a>
+            <a href="#">PREETI SHENOY</a>
+            <a href="#">NARPAL MANAL</a>
+            <a href="#">SONIA BAHL</a>
+            <a href="#">NIKHIL MAHAJAN</a>
+    	</div>
+    </div>
+    <div class="dropdown">
+    	<button class="dropbtn"><strong>LANGUAGE</strong>
+      		<i class="fa fa-caret-down"></i>
+    	</button>
+    	<div class="dropdown-content">
+      		<a href="#">HINDI</a>
+     		<a href="#">ENGLISH</a>
+      		<a href="#">MALAYALAM</a>
+    	</div>
+    </div>
+    <div class="dropdown">
+    	<button class="dropbtn"><strong>GENRE</strong>
+      		<i class="fa fa-caret-down"></i>
+    	</button>
+    	<div class="dropdown-content">
+      		<a href="#">HORROR</a>
+     		<a href="#">ACTION</a>
+      		<a href="#">ROMANCE</a>
+    	</div>
+    </div>
+ 	<div class="dropdown">
+    	<button class="dropbtn"><strong>INDEX</strong>
+      		<i class="fa fa-caret-down"></i>
+    	</button>
+    	<div class="dropdown-content">
+      		<a href="#">a</a>
+     		<a href="#">b</a>
+      		<a href="#">c</a>
+            <a href="#">d</a>
+     		<a href="#">e</a>
+      		<a href="#">f</a>
+            
+    	</div>
+		
+			<strong><font color="white">HI <label id="nam">xxx</label></font></strong>
+		
+	</div>
+	
+    <strong><a href="/">LOGOUT</a></strong>	
+	
+</div>
+
+<div class="x">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;<img src="./images/all1.jpg" width="1500" height="700"><br>
+
+
+<div class="m1">
+	<p align="center">&nbsp;</p>
+</div>
+<div class="m2">
+    <a href="payment.html" target="_blank"><font color="#FF5733 " face="Courier New, Courier, monospace" size="+4"><h1>BECOME A PRO</h1></font></a>
+    <h1><font color="#FF5733" face="Courier New, Courier, monospace" size="+5">for 30% OFF</font></h1>
+    <br><br><br><br><br><br><br><br><br>
+</div>
+
+
+ <form action="/sub" method="POST" name="myform" onsubmit="return N1();">
+
+
+<h1><font color="#   900C3F">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NEW RELEASES</font></h1>
+<br><br><br><
+
+
+<div class="n">
+  <br><br><br>
+
+   <img src="./images/Venom.jpg" width="300" height="400">
+   <br>
+   <font color="white" size="+1" ><strong>VENOM</strong></font><font color="#fffff"><br>Andy Serkis<br></font>
+    <div class="rate">
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<font color="#fffff">AVG:<label id="rar1">rr1</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Rating:</font>
+    
+	
+		
+	
+	<input type="text" id="first1" name="r1" placeholder="&nbsp;1-5"><br>
+  </div>
+	
+</div>
+
+<div class="n">
+  <br><br><br>
+	<img src="./images/Mor.jpg" width="300" height="400">
+    <br>
+
+    <font color="white" size="+1"><strong>MORTAL KOMPAT</strong></font><br>
+    <font color="#fffff">Simon McQuoid</font>
+<br>
+    <div class="rate">
+      <br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 <font color="#fffff">AVG:<label id="rar2">rr2</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Rating:</font><input type="text" id="first2" name="r2" placeholder="&nbsp;1-5"><br>
+	
+
+  </div>
+  
+</div>
+<div class="n">
+  <br><br>
+	<img src="./images/Bw.jpg" width="300" height="400">
+    <br>
+    <font color="white" size="+1"><strong>BLACK WIDOW</strong></font><br><font color="#fffff">Cate Shortland</font><br>
+      <div class="rate">
+       <br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <font color="#fffff">AVG:<label id="rar3">rr3</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Rating:</font><input type="text" id="first3" name="r3" placeholder="&nbsp;1-5"><br>
+  </div>
+    &nbsp;
+    &nbsp;
+
+</div>
+
+
+<div class="m3">
+	
+
+</div>
+
+<div class="n">
+  <br><br><br><br><br>
+   <img src="./images/ray.jpg" width="300" height="400">
+   <br>
+   <font color="white" size="+1"><strong>RAYA</strong></font><br><font color="#fffff">Don Hall</font><br>
+    <div class="rate">
+    <br>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <font color="#fffff">AVG:<label id="rar4">rr4</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Rating:</font><input type="text" id="first4" name="r4" placeholder="&nbsp;1-5"><br>
+  </div>
+  
+	
+</div>
+
+<div class="n">
+  <br><br><br><br><br>
+	<img src="./images/aq.jpg" width="300" height="400">
+   <br>
+   <font color="white" size="+1"><strong>AQUAMAN</strong></font><br><font color="#fffff">James Wan</font><br>
+    <div class="rate">
+     <br>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <font color="#fffff">AVG:<label id="rar5">rr5</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Rating:</font><input type="text" id="first5" name="r5" placeholder="&nbsp;1-5"><br>
+  </div>
+  
+  
+</div>
+<div class="n">
+  <br><br><br><br><br>
+	<img src="./images/nun.jpg" width="300" height="400">
+   <br>
+   <font color="white" size="+1"><strong>THE NUN</strong></font><br><font color="#fffff">Corin Hardy</font><br>
+    <div class="rate">
+      <br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <font color="#fffff">AVG:<label id="rar6">rr6</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Rating:</font><input type="text" id="first6" name="r6" placeholder="&nbsp;1-5"><br>
+  </div>
+  <br><br><br><br>
+  <br><br><br><br>
+<br><br><br><br>
+
+  <input type="submit" value="Submit">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</div>
+
+<form>
+
+
+
+<div class="mm">
+ <br><br><br><br><br><br><br><br><br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Customer Care<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ph num:0044 1122 4578<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;email:Filmy@bk.com<br>
+  
+
+ 
+ </div>
+</div>
+</body>
 </html>
