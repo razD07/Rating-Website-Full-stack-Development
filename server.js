@@ -1,6 +1,3 @@
-// HTTP Module for Creating Server and Serving Static Files Using Node.js
-// Static Files: HTML, CSS, JS, Images
-// Get Complete Source Code from Pabbly.com
 
 var http = require('http');
 var fs = require('fs');
@@ -10,7 +7,7 @@ const { parse } = require('querystring');
 
 const sqlite3 = require('sqlite3').verbose();
 
-// open the database connection
+
 let db = new sqlite3.Database('./dbs/testdb.db');
 
 function collectRequestData(request, callback) {
@@ -52,7 +49,7 @@ http.createServer(function(req, res){
                         console.log(bb);
                         let lan =[aa,bb];
                         let sms ="SELECT usr,pass,nam FROM Users WHERE usr=? and pass=?";
-                        let av = 'SELECT AVG(r1) AS AVG,AVG(r2) AS AVG2,AVG(r3) AS AVG3,AVG(r4) AS AVG4,AVG(r5) AS AVG5,AVG(r6) AS AVG6  FROM ratings ';
+                        let av = 'SELECT round(AVG(r1),1) AS AVG,round(AVG(r2),1) AS AVG2,round(AVG(r3),1) AS AVG3,round(AVG(r4),1) AS AVG4,round(AVG(r5),1) AS AVG5,AVG(r6) AS AVG6  FROM ratings ';
                     
 
                             db.get(sms,lan,function(err,row){
@@ -93,7 +90,7 @@ http.createServer(function(req, res){
                         
                     }
                     else{
-                        fs.readFile("./public/index.html", "UTF-8", function(err, html){
+                        fs.readFile("./public/index_rel.html", "UTF-8", function(err, html){
                             res.writeHead(200, {"Content-Type": "text/html"});
                             res.end(html);
                         });
@@ -105,7 +102,7 @@ http.createServer(function(req, res){
             }
 );  
     }else if(req.url === "/reg"){
-        fs.readFile("./public/sel_mov.html", "UTF-8", function(err, html){
+        fs.readFile("./public/index.html", "UTF-8", function(err, html){
             res.writeHead(200, {"Content-Type": "text/html"});
          
             collectRequestData(req, result => {
@@ -124,8 +121,7 @@ http.createServer(function(req, res){
             console.log('connected');
             let languages = [aa, bb, cc, dd, ee];
                 
-// construct the insert statement with multiple placeholders
-// based on the number of rows
+
             let placeholders = languages.map((language) => '?').join(',');
             console.log(placeholders);
             let sql = 'INSERT INTO Users(nam,email,usr,pass,passt) VALUES (' + placeholders+')';
@@ -170,8 +166,7 @@ http.createServer(function(req, res){
 2
 3
              
-// construct the insert statement with multiple placeholders
-// based on the number of rows
+
             let placeholders = languages.map((language) => '?').join(',');
             console.log(placeholders);
             let sql = 'INSERT INTO ratings(r1,r2,r3,r4,r5,r6) VALUES (' + placeholders+')';
@@ -207,4 +202,3 @@ http.createServer(function(req, res){
 
 }).listen(8050);
 
-//sqlite.exec
